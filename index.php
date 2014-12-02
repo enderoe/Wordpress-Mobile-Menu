@@ -235,7 +235,7 @@ foreach($items as $item){
 	<?php
 		if($logoswitch == 1){
 			?>
-			<a href="<?php get_home_url(); ?>">
+			<a href="<?php echo get_home_url(); ?>">
 				<img src="<?php echo $logourl;  ?>" class="mobielmenulogo">
 			</a>
 			<?php
