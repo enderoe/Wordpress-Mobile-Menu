@@ -247,8 +247,8 @@ foreach($items as $item){
 
 }	
 		
-add_action( 'wp_enqueue_scripts', 'my_plugin_enqueue' );
-function my_plugin_enqueue() {
+add_action( 'wp_enqueue_scripts', 'my_mmenu_sb_styles' );
+function my_mmenu_sb_styles() {
 	    wp_enqueue_style( 'footertransparant',plugins_url('/social_brothers_mmenu/style.css'), '.css', NULL, NULL, 'all' );
 		wp_enqueue_script('sbnavjs', plugins_url( 'jquery.dlmenu.js', __FILE__ ),array('jquery'), '1.1', true);
 		wp_enqueue_script('sbscripts', plugins_url( 'scripts.js', __FILE__ ),array('jquery'), '1.1', true);
