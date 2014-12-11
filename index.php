@@ -17,14 +17,14 @@
 
 
 
-add_action('admin_menu', 'adminmenu_func');
-function adminmenu_func(){
+add_action('admin_menu', 'sbmadminmenu_func');
+function sbmadminmenu_func(){
 	//call register settings function
-	add_action( 'admin_init', 'register_mysettings' );
+	add_action( 'admin_init', 'register_sbmenusettings' );
 	add_menu_page( 'Mobile Menu', 'Mobiele menu', 'manage_options', 'mobilemenu-plugin', 'adminmenu_func_init' );
 }
 
-function register_mysettings() {
+function register_sbmenusettings() {
 	//register our settings
 	register_setting( 'baw-settings-group', 'menu_color' );
 	register_setting( 'baw-settings-group', 'mobiele_menu' );
